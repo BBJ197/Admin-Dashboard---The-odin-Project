@@ -1,0 +1,56 @@
+:root{
+    --blue-bacground: rgb(0, 157, 255);
+    --gray-bacground: rgb(216, 216, 216);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(20, 0.5fr);
+    grid-template-rows: repeat(20, 5vh);
+}
+
+.dashbord{
+    background-color: var(--blue-bacground);
+    grid-area: 1/1/21/4;
+}
+
+.header{
+    background-color: red;
+    grid-area: 1/4/3/21;
+}
+
+.nav{
+    background-color: rgb(255, 153, 0);
+    grid-area: 2/4/4/21;
+}
+
+.main{
+    height: 85vh;
+    background-color: var(--gray-bacground);
+    grid-area: 4/4/21/21;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 8.5vh);
+}
+
+.projects {
+    background-color: green;
+    grid-area: 1/1/11/7;
+}
+
+.announcements {
+    background-color: rgb(128, 68, 0);
+    grid-area: 1/7/6/11;
+}
+
+.trending{
+    background-color: rgb(128, 0, 117);
+    grid-area: 6/7/11/11;   
+}
