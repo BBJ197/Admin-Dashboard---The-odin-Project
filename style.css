@@ -168,12 +168,12 @@ h1 {
 }
 
 .projects {
+    overflow: auto;
     padding: 1vh 3%;
     grid-area: 1/1/21/16;
 }
 
 .cards{
-    resize: both;
     overflow: auto;
     display: grid;
     gap: 15px;
@@ -209,17 +209,16 @@ h1 {
 }
 
 .announcements {
+    overflow: auto;  
     grid-area: 1/16/11/21;
 }
 
 .anCards{
     overflow: auto;
-    height: 31vh;
     min-width: 170px;
     background-color: white;
     padding: 15px;
     margin-right: 8%;
-    margin-bottom: 100px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -230,7 +229,7 @@ h1 {
 .anCards .ansmtCards{
     padding-bottom: 15px;
     border-bottom: solid rgba(0, 0, 0, 0.388) 1px;
-    width: 1fr;
+    min-width: 170px;
 }
 
 .anCards .ansmtCards .ansmthead{
@@ -238,6 +237,52 @@ h1 {
 }
 
 .trending{
-    background-color: rgb(128, 0, 117);
-    grid-area: 11/16/21/21;   
+    grid-area: 11/16/21/21; 
+    overflow: auto;  
+}
+
+.trending .trendCards{
+    overflow: auto;
+    min-width: 170px;
+    background-color: white;
+    padding: 15px;
+    margin-right: 8%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+}
+
+.trending .trendCards .trendCard{
+    display: flex;
+    align-items: center;
+    min-width: 190px;
+    gap: 10px;
+}
+
+.trending .trendCards .trendCard .userName{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#one{
+    color: rgb(23, 166, 233);
+    font-size: 40px;
+}
+
+#two{
+    color: rgb(233, 90, 23);
+    font-size: 40px;
+}
+
+#three{
+    color: rgb(52, 63, 67);
+    font-size: 40px;
+}
+
+#four{
+    color: rgb(23, 233, 48);
+    font-size: 40px;
 }
