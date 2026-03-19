@@ -1,6 +1,6 @@
 :root{
     --blue-bacground: rgb(31, 169, 255);
-    --gray-bacground: rgb(216, 216, 216);
+    --gray-bacground: rgba(169, 181, 183, 0.345);
 }
 
 body{
@@ -64,6 +64,7 @@ body{
     justify-content: space-between;
     padding: 0 4vw;
     align-items: end;
+    min-width: 650px;
 }
 
 .header .leftHeader{
@@ -95,10 +96,10 @@ body{
 }
 
 form input {
-    background-color: rgba(128, 128, 128, 0.543);
+    background-color:var(--gray-bacground);
     border-radius: 20px;
-    height: 2.6vh;
-    width: 35vw;
+    height: 4vh;
+    width: 45vw;
     border: none;
 }
 
@@ -129,7 +130,7 @@ form input {
 }
 
 .greeting .name {
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 700;
 }
 
@@ -141,31 +142,75 @@ form input {
 .nav .navbuttons button{
     background-color: var(--blue-bacground);
     height: 4vh;
+    min-width: 60px;
     width: 7vw;
     border: none;
     border-radius: 20px;
     color: white;
     font-size: 15px;
     font-weight: 700;
+
 }
 
 .main{
     height: 85vh;
-    background-color: var(--gray-bacground);
     grid-area: 4/4/21/21;
     display: grid;
     grid-template-columns: repeat(20, 0.5fr);
     grid-template-rows: repeat(20, 4.1vh);
+    background-color: var(--gray-bacground);
+}
+
+h1 {
+    font-size: 23px;
+    font-weight: 900;
 }
 
 .projects {
-    background-color: green;
+    padding: 1vh 3%;
     grid-area: 1/1/21/16;
+}
+
+.cards{
+    resize: both;
+    overflow: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+}
+
+.projects .card{
+    background-color: white;
+    padding: 20px;
+    border-left: solid rgb(255, 196, 0) 7px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .title {
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.card .icons{
+    font-weight: 900;
+    font-size: 25px;
+    display: flex;
+    gap: 15px;
+    align-self: flex-end;
+}
+
+.card .content {
+    font-size: 15px;
 }
 
 .announcements {
     background-color: rgb(128, 68, 0);
     grid-area: 1/16/11/21;
+
 }
 
 .trending{
