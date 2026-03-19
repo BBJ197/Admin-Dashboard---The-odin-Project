@@ -1,46 +1,46 @@
-:root{
+:root {
     --blue-bacground: rgb(31, 169, 255);
     --gray-bacground: rgba(169, 181, 183, 0.345);
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(20, 0.5fr);
     grid-template-rows: repeat(20, 5vh);
 }
 
-.dashbord{
+.dashbord {
     background-color: var(--blue-bacground);
     grid-area: 1/1/21/4;
     color: white;
     display: flex;
     flex-direction: column;
-    align-items:auto;
+    align-items: auto;
     gap: 5vh;
     padding: 1.5vh 1vw 40vh 1vw;
     min-width: 160px;
 }
 
-.dashbord a{
+.dashbord a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
 
-.dashbord .logo{
+.dashbord .logo {
     font-size: 30px;
     font-weight: 900;
 }
 
-.dashbord .dashLinksTop{
+.dashbord .dashLinksTop {
     display: flex;
     flex-direction: column;
     gap: 0.1vh;
@@ -51,13 +51,13 @@ body{
 
 }
 
-.dashbord .dashLinksbottom{
+.dashbord .dashLinksbottom {
     display: flex;
     flex-direction: column;
     gap: 0.1vh;
 }
 
-.header{
+.header {
     background-color: white;
     grid-area: 1/4/2/21;
     display: flex;
@@ -67,25 +67,25 @@ body{
     min-width: 650px;
 }
 
-.header .leftHeader{
+.header .leftHeader {
     display: flex;
     gap: 15px;
     align-items: end;
 }
 
-.header form{
+.header form {
     display: flex;
     gap: 5px;
     align-items: center;
 }
 
-.hLogo{
+.hLogo {
     color: rgb(255, 196, 0);
     font-size: 45px;
     transform: translateY(12px);
 }
 
-.notification{
+.notification {
     font-size: 26px;
 }
 
@@ -96,7 +96,7 @@ body{
 }
 
 form input {
-    background-color:var(--gray-bacground);
+    background-color: var(--gray-bacground);
     border-radius: 20px;
     height: 4vh;
     width: 45vw;
@@ -109,7 +109,7 @@ form input {
     transform: translateY(-5px);
 }
 
-.nav{
+.nav {
     background-color: white;
     grid-area: 2/4/4/21;
     display: flex;
@@ -124,7 +124,7 @@ form input {
     gap: 10px;
 }
 
-.nav .left .nLogo{
+.nav .left .nLogo {
     color: rgb(255, 196, 0);
     font-size: 65px;
 }
@@ -134,12 +134,12 @@ form input {
     font-weight: 700;
 }
 
-.nav .navbuttons{
+.nav .navbuttons {
     display: flex;
     gap: 1.5vw;
 }
 
-.nav .navbuttons button{
+.nav .navbuttons button {
     background-color: var(--blue-bacground);
     height: 4vh;
     min-width: 60px;
@@ -152,7 +152,7 @@ form input {
 
 }
 
-.main{
+.main {
     min-width: 850px;
     height: 85vh;
     grid-area: 4/4/21/21;
@@ -173,7 +173,7 @@ h1 {
     grid-area: 1/1/21/16;
 }
 
-.cards{
+.cards {
     overflow: auto;
     display: grid;
     gap: 15px;
@@ -181,7 +181,7 @@ h1 {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
 }
 
-.projects .card{
+.projects .card {
     background-color: white;
     padding: 20px;
     border-left: solid rgb(255, 196, 0) 7px;
@@ -196,7 +196,7 @@ h1 {
     font-size: 17px;
 }
 
-.card .icons{
+.card .icons {
     font-weight: 900;
     font-size: 25px;
     display: flex;
@@ -209,11 +209,11 @@ h1 {
 }
 
 .announcements {
-    overflow: auto;  
+    overflow: auto;
     grid-area: 1/16/11/21;
 }
 
-.anCards{
+.anCards {
     overflow: auto;
     min-width: 170px;
     background-color: white;
@@ -226,22 +226,22 @@ h1 {
     gap: 2vh;
 }
 
-.anCards .ansmtCards{
+.anCards .ansmtCards {
     padding-bottom: 15px;
     border-bottom: solid rgba(0, 0, 0, 0.388) 1px;
     min-width: 170px;
 }
 
-.anCards .ansmtCards .ansmthead{
+.anCards .ansmtCards .ansmthead {
     font-weight: 800;
 }
 
-.trending{
-    grid-area: 11/16/21/21; 
-    overflow: auto;  
+.trending {
+    grid-area: 11/16/21/21;
+    overflow: auto;
 }
 
-.trending .trendCards{
+.trending .trendCards {
     overflow: auto;
     min-width: 170px;
     background-color: white;
@@ -254,35 +254,35 @@ h1 {
     gap: 2vh;
 }
 
-.trending .trendCards .trendCard{
+.trending .trendCards .trendCard {
     display: flex;
     align-items: center;
     min-width: 190px;
     gap: 10px;
 }
 
-.trending .trendCards .trendCard .userName{
+.trending .trendCards .trendCard .userName {
     font-size: 20px;
     font-weight: 600;
 }
 
 
-#one{
+#one {
     color: rgb(23, 166, 233);
     font-size: 40px;
 }
 
-#two{
+#two {
     color: rgb(233, 90, 23);
     font-size: 40px;
 }
 
-#three{
+#three {
     color: rgb(52, 63, 67);
     font-size: 40px;
 }
 
-#four{
+#four {
     color: rgb(23, 233, 48);
     font-size: 40px;
 }
