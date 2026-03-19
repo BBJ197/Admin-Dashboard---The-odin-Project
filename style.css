@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     align-items:auto;
     gap: 5vh;
-    padding: 1vh 1vw 40vh 1vw;
+    padding: 1.5vh 1vw 40vh 1vw;
     min-width: 160px;
 }
 
@@ -58,12 +58,59 @@ body{
 }
 
 .header{
-    background-color: red;
-    grid-area: 1/4/3/21;
+    background-color: white;
+    grid-area: 1/4/2/21;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+    align-items: end;
+}
+
+.header .leftHeader{
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+
+.header form{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.hLogo{
+    color: rgb(255, 196, 0);
+    font-size: 45px;
+    display: flex;
+    transform: translateY(12px);
+}
+
+.notification{
+    font-size: 26px;
+}
+
+.Search_button {
+    background-color: white;
+    border: none;
+    font-size: 28px;
+}
+
+form input {
+    background-color: rgba(128, 128, 128, 0.543);
+    border-radius: 20px;
+    height: 2.6vh;
+    width: 35vw;
+    border: none;
+}
+
+.leftHeader .name {
+    font-size: 17px;
+    font-weight: 900;
+    transform: translateY(-5px);
 }
 
 .nav{
-    background-color: rgb(255, 153, 0);
+    background-color: white;
     grid-area: 2/4/4/21;
 }
 
