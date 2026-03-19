@@ -153,6 +153,7 @@ form input {
 }
 
 .main{
+    min-width: 850px;
     height: 85vh;
     grid-area: 4/4/21/21;
     display: grid;
@@ -176,7 +177,7 @@ h1 {
     overflow: auto;
     display: grid;
     gap: 15px;
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(max(100px, 23vh), 1fr));
     grid-template-columns: repeat(2, minmax(150px, 1fr));
 }
 
@@ -208,9 +209,32 @@ h1 {
 }
 
 .announcements {
-    background-color: rgb(128, 68, 0);
     grid-area: 1/16/11/21;
+}
 
+.anCards{
+    overflow: auto;
+    height: 31vh;
+    min-width: 170px;
+    background-color: white;
+    padding: 15px;
+    margin-right: 8%;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+}
+
+.anCards .ansmtCards{
+    padding-bottom: 15px;
+    border-bottom: solid rgba(0, 0, 0, 0.388) 1px;
+    width: 1fr;
+}
+
+.anCards .ansmtCards .ansmthead{
+    font-weight: 800;
 }
 
 .trending{
